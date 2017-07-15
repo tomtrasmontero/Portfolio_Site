@@ -2,8 +2,6 @@ navbar {
 
   display: block;
   background: white;
-  border-bottom: 1px solid black;
-  box-shadow: 1px 1px 14px -3px black;
 
   .container {
     width: 91%;
@@ -58,5 +56,23 @@ navbar {
       cursor: pointer;
     }
   }
+
+  .navbar-toggle {
+    background-color: #000; /* Changes regular toggle color */
+  }
+
+  .navbar-toggle:hover {
+    background: #fff; /* Change color for horizontal lines */
+  }
+  
+  .navbar-toggle:hover .icon-bar{
+    background-color: #ffffff; /* Changes toggle color on hover */
+    background: #000;
+  }
+
+  .navbar-toggle .icon-bar {
+    background: #ffffff; /* Change color for horizontal lines */
+  }
+
 
 }
