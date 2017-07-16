@@ -1,8 +1,20 @@
 section#home {
-	background-color: #eceeef;
+	background-color: #ffffff;
 	padding: 2rem;
 	
-	 h2.homeH2 {
+	div.cust-home {
+	  margin-bottom: 0px;
+	  padding-top: 0px;
+	  padding-bottom: 0px;
+	  background-color: #ffffff;
+
+	  span {
+	  	color: #d10c19;
+	  }
+
+	}
+
+	 h1.homeText {
 	  text-align: center;
 	  background: none;
 	}
@@ -10,6 +22,21 @@ section#home {
 	div p {
 		text-align: center;
 	}
+
+
+}
+
+section.parallax1 {
+	background: url(https://d13pix9kaak6wt.cloudfront.net/background/prashanthr_1338530825_96.jpg);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 50px;
+}
+
+section#homeAboutSection {
+	height: 1000px;
 }
 
 

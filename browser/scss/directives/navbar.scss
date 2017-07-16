@@ -28,13 +28,57 @@ navbar {
 
   .nav > li > a {
     cursor: pointer;
-    transition: color 0.2s;
+
+    // scaling animation
+    -webkit-transform: scale(1.0);
+     /* Browser Variations: */
+     -moz-transform: scale(1.0);
+     -o-transform: scale(1.0);
+     -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+     -o-transition-duration: 0.4s;
+
+     // underline animation
+     position: relative;
+     color: #000;
+     text-decoration: none;
+
     &.active {
       color: darken(#f31214, 10%);
     }
+
+    &:before  {
+      // underline animation
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;      
+    }
+
+    &:hover:before {
+      // underline animation
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
     &:hover {
       background: none;
-      color: #f31214;
+      // scaling animation
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+
+     // underline animation
+      color: #000;
     }
     &:focus {
       background: none;
@@ -81,8 +125,14 @@ navbar {
   }
 
   img.img-responsive {
-    width: 85%;
-    height: 170%;
+    width: 50%;
+    height: 150%;
+    margin: auto;
+    margin: auto 1rem auto auto;
+  }
+
+  span.navbar-brand {
+    padding: 15px 15px 15px 0px;
   }
 
 
