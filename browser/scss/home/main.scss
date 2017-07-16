@@ -1,8 +1,17 @@
-#home {
-  fullstack-logo {
-    padding-top: 30px;
-    width: 150px;
-    margin: 0 auto;
-  }
+section#home {
+	background-color: #eceeef;
+	padding: 2rem;
+	
+	 h2.homeH2 {
+	  text-align: center;
+	  background: none;
+	}
+
+	div p {
+		text-align: center;
+	}
 }
+
+
+
 
