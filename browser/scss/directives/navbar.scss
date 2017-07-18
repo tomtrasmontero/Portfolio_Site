@@ -43,9 +43,6 @@ navbar {
      color: #000;
      text-decoration: none;
 
-    &.active {
-      color: darken(#f31214, 10%);
-    }
 
     &:before  {
       // underline animation
@@ -80,6 +77,11 @@ navbar {
      // underline animation
       color: #000;
     }
+
+    &.active {
+      color: #FFFFFF;
+    }
+
     &:focus {
       background: none;
     }
@@ -107,23 +109,12 @@ navbar {
     }
   }
 
-  // .navbar-toggle {
-  //   background-color: #000; /* Changes regular toggle color */
-  // }
-
-  // .navbar-toggle:hover {
-  //   background: #fff; /* Change color for horizontal lines */
-  // }
-
-  // .navbar-toggle:hover .icon-bar{
-  //   background-color: #ffffff; /* Changes toggle color on hover */
-  //   background: #000;
-  // }
-
+  //hamburger color
   .navbar-toggle .icon-bar {
     background: #000000; /* Change color for horizontal lines */
   }
 
+  // logo TT
   img.img-responsive {
     width: 50%;
     height: 150%;
