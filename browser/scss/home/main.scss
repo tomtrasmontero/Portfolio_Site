@@ -24,7 +24,6 @@ section#home {
 	}
 
 	div img.img-responsive {
-		margin-top: 50px;
 		margin-bottom: 50px;
 	}
 
@@ -41,11 +40,6 @@ section#home {
 	height: 6rem;
 }
 
-@media only screen and (max-device-width: 800px) {
-    .parallax1 {
-        height: 3rem;
-	    }
-}
 
 section#homeSkillSection {
 	min-height: 500px;
@@ -66,9 +60,50 @@ section#homeSkillSection {
 		margin: auto;
 	}
 
-	.imgSkillContainer img {
-		height: 50%;
-		width: auto;
+	.imgSkillContainer {
+
+  		width: 100%;
+
+  		&:hover {
+  			img {
+  				opacity: 0.3;
+  			}
+
+  			div.overlay {
+  				opacity: 0.8;
+  			}
+  		}
+
+		img {
+			height: 50%;
+			width: 65%;
+
+		}
+
+		div.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: #ffffff;
+
+		}
+
+		div.overlay-text {
+			color: red;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+		}
+
 	}
 
 	.skillDescription {
@@ -79,3 +114,8 @@ section#homeSkillSection {
 
 
 
+@media only screen and (max-device-width: 800px) {
+    .parallax1 {
+        height: 3rem;
+	    }
+}
