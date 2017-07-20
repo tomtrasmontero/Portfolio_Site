@@ -54,6 +54,16 @@ section#homeSkillSection {
 
 	p.homeText {
 		text-align: center;
+
+		&.skillsText {
+			color: #d10c19;
+			text-decoration: underline;
+		}
+
+		span {
+	  	color: #d10c19;
+	  }
+
 	}
 
 	div.jumbotron {
@@ -121,9 +131,6 @@ section#homeSkillSection {
 
 	}
 
-	.skillDescription {
-		text-align: center;
-	}
 
 }
 
