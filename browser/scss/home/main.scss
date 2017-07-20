@@ -42,6 +42,7 @@ section#home {
 
 
 section#homeSkillSection {
+
 	min-height: 500px;
 	background-color: #ffffff;
 	margin-bottom: 5%;
@@ -60,25 +61,37 @@ section#homeSkillSection {
 		margin: auto;
 	}
 
+	img.skillImg {
+		margin: auto;
+		display: block;
+	}
+
 	.imgSkillContainer {
 
   		width: 100%;
+  		margin: 5%;
 
   		&:hover {
   			img {
-  				opacity: 0.3;
+			    -webkit-transform: scale(0.8);
+			    -moz-transform: scale(0.8);
+			    -o-transform: scale(0.8);
   			}
 
   			div.overlay {
-  				opacity: 0.8;
+  				opacity: 0.7;
   			}
   		}
 
+				
 		img {
-			height: 50%;
-			width: 65%;
+			height: auto;
+			width: 100%;
+			max-height: 240px;
+			max-width: 185px;
 
 		}
+
 
 		div.overlay {
 			position: absolute;
@@ -94,11 +107,13 @@ section#homeSkillSection {
 
 		}
 
-		div.overlay-text {
-			color: red;
-			font-size: 20px;
+		h2.overlay-text {
+			text-align: center;
+			background-color: #ffffff;
+			color: #000000;
+			font-size: 3em;
 			position: absolute;
-			top: 50%;
+			top: 40%;
 			left: 50%;
 			transform: translate(-50%, -50%);
   			-ms-transform: translate(-50%, -50%);
@@ -109,8 +124,8 @@ section#homeSkillSection {
 	.skillDescription {
 		text-align: center;
 	}
-}
 
+}
 
 
 
@@ -118,4 +133,20 @@ section#homeSkillSection {
     .parallax1 {
         height: 3rem;
 	    }
+
+}
+
+@media only screen and (max-device-width: 700px) {
+    #homeSkillSection {
+    	margin-bottom: 15%;
+
+    }
+
+    .imgSkillContainer {
+    	
+    	h2.overlay-text {
+    		top: 20%;
+    		font-size: 1em;
+    	}
+    }    
 }
