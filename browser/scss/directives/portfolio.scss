@@ -1,6 +1,30 @@
+section.portfolioSummary  {
+	padding: 5% 0px 3% 0px;
+
+
+	h1, p {
+		text-align: center;
+	}
+
+	a.FSG {
+		color: #d10c19;
+		text-decoration: underline;
+	}
+}
+
+
 section#portfolio {
-	background-color: #000000;
+	background-color: #ffffff;
 	padding: 2rem;
 	min-height: 500px;
+
+	span {
+	  	color: #d10c19;
+	}
+
+	img.portfolioImg {
+		margin: auto
+
+	}
 
 }
