@@ -61,3 +61,11 @@ app.run(function ($rootScope, AuthService, $state) {
     });
 
 });
+
+//add autoscroll to top of page on state change
+app.run(['$rootScope','$window',function($rootScope,$window){
+    $rootScope.$on("$stateChangeSuccess",function(){
+         $window.scrollTo(0, 0);
+    })
+}]);
+
