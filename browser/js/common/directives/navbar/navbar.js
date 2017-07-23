@@ -1,4 +1,4 @@
-app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) {
+app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state, $window) {
 
     return {
         restrict: 'E',
@@ -14,7 +14,17 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
                 { label: 'Members Only', state: 'membersOnly', auth: true }
             ];
 
+            //check screen size to acctivate auto collapse in navbar for mobile sizes
+            scope.screenWidth = $window.innerWidth;
+
+            scope.checkWidth = function () {
+                if ($window.innerWidth !== scope.screenWidth) {
+                    scope.screenWidth = $window.innerWidth;
+                }
+            };
+
             scope.user = null;
+
 
             scope.isLoggedIn = function () {
                 return AuthService.isAuthenticated();
