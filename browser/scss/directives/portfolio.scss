@@ -33,12 +33,6 @@ section#portfolio {
 
 	div.projectShowcase {
 		margin-bottom: 5%;
-
-		p {
-			font-size: 18px;
-    		font-weight: 500;
-		}
-	
 	}
 
 	div.imgContainer {
@@ -51,16 +45,81 @@ section#portfolio {
 
 		&:hover {
 
-			img {
-		  	  
+			img {		  	  
 			  //grey scale
 			  -webkit-filter: grayscale(50%); /* Safari */
     		  filter: grayscale(50%);
+	
+			}
 
-    		  	//boxshadow
-			  // box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
-			  // -webkit-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
-			  // -moz-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);	
+			div.overlay {
+		    	// working with overaly
+		  		opacity: 0.5;
+		  	}
+		}
+	
+		div.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			background-color: #ffffff;
+
+		}
+
+		h3.overlay-text {
+			text-align: center;
+			background-color: #ffffff;
+			color: #000000;
+			font-size: 3em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+		}
+	}
+}
+
+// Portfolio Detail css
+section.portfolioDetail{
+	padding: 2rem;
+	min-height: 800px;
+
+	h3, p {
+		text-align: center;
+	}
+
+	span {
+	  	color: #d10c19;
+	}
+
+	img.portfolioImg {
+		margin: auto
+	}
+
+	div.projectShowcase {
+		margin-bottom: 5%;
+	}
+
+	div.imgContainer {
+		cursor: pointer;
+	      //boxshadow
+		  box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
+		  -webkit-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
+		  -moz-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);	
+
+		&:hover {
+
+			img {		  	  
+			  //grey scale
+			  -webkit-filter: grayscale(50%); /* Safari */
+    		  filter: grayscale(50%);
+	
 			}
 
 			div.overlay {
@@ -95,5 +154,5 @@ section#portfolio {
 		}
 	}
 
-
+	
 }

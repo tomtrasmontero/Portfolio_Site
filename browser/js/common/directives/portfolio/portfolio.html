@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-xs-12 summaryDescription">
 				<h1>What I've been doing</h1>
-				<p>List of projects I've benn involved in.  Still making updates as I discover new technologies.</p>
+				<p>List of projects I've been involved in.  Still making updates as I discover new technologies.</p>
 			</div>
 		</div>
 	</div>
@@ -13,60 +13,23 @@
     <div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
-				
-				<div class="row">
-				  <div class="col-xs-1 col-sm-2 col-md-3"></div>
-					<div class="col-xs-10 col-sm-8 col-md-6 projectShowcase">
-					    <h3>Project:<span> what's on</span></h3>
-					    <p>Twitch-like website that allows a user stream live broadcast through the browser.  Allows for screen broadcast as well!</p>	
-					    <div class="row">
-						  <div class="imgContainer col-xs-12">
-						    <img src="assets/cropped/whatson/frontpage.png" class="img-responsive portfolioImg">
-						    <div class="overlay">
-						    	<h3 class="overlay-text">View Demo</h3>
-						    </div>
-						  </div>	
-					    </div>
-					</div>
-				  <div class="col-xs-1 col-sm-2 col-md-3"></div>  	
-				</div>
 
-				<div class="row">
+				<div class="row" ng-repeat="project in projects">
 				  <div class="col-xs-1 col-sm-2 col-md-3"></div>
 					<div class="col-xs-10 col-sm-8 col-md-6 projectShowcase">
-					    <h3>Project:<span> Grace Shopper</span></h3>
-					    <p>E-Commerce website that allows user to create and fully manage an online store!</p>		
+					    <h3>Project:<span> {{project.name}}</span></h3>
 					    <div class="row">
 						  <div class="imgContainer col-xs-12">
-						    <img src="assets/cropped/Grace Shopper/frontpage.png" class="img-responsive portfolioImg">
+						    <a ui-sref="portfolioDetail({id: {{project.id}} })"><img ng-src="{{project.pictureUrl[0]}}" class="img-responsive portfolioImg">
 						    <div class="overlay">
-						    	<h3 class="overlay-text">View Demo</h3>
+						    	<h3 class="overlay-text">See Details</h3>
 						    </div>
-						  </div>	
-					    </div>
-					</div>
-				  <div class="col-xs-1 col-sm-2 col-md-3"></div>  	
-				</div>
-
-				<div class="row">
-				  <div class="col-xs-1 col-sm-2 col-md-3"></div>
-					<div class="col-xs-10 col-sm-8 col-md-6 projectShowcase">
-					    <h3>Project:<span> Portfolio Site</span></h3>
-					    <p>Your looking at it right now!</p>		
-					    <div class="row">
-						  <a ui-sref="home">
-						  <div class="imgContainer col-xs-12">
-						    <a ui-sref="home"><img src="assets/frontpage.png" class="img-responsive portfolioImg">
-						    <div class="overlay">
-						    	<h3 class="overlay-text">View Demo</h3>
-						    </div>
-						  </div>	
 						  </a>
+						  </div>
 					    </div>
 					</div>
-				  <div class="col-xs-1 col-sm-2 col-md-3"></div>  	
-				</div>				
-
+				  <div class="col-xs-1 col-sm-2 col-md-3"></div>
+				</div>
 
 			</div>
 		</div>

@@ -20,6 +20,7 @@ name in the environment files.
 var chalk = require('chalk');
 var db = require('./server/db');
 var User = db.model('user');
+const Project = db.model('portfolio');
 var Promise = require('sequelize').Promise;
 
 var seedUsers = function () {
@@ -43,9 +44,53 @@ var seedUsers = function () {
 
 };
 
+let portfolio = function () {
+
+    var projects = [
+        {
+            name: "what's on",
+            description: 'Twitch-like website that allows a user to broadcast a live stream from the browser to the world.  Also allows for screen broadcast as well!',
+            pictureUrl: [
+                'assets/cropped/whatson/frontpage.png',
+                'assets/cropped/whatson/frontpage.png'
+            ],
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap, WebRTC, RTC Multi Connection, Dropbox'
+        },
+        {
+            name: "Grace Shopper",
+            description: 'E-Commerce website that allows user to create and fully manage an online store!',
+            pictureUrl: [
+                'assets/cropped/Grace Shopper/frontpage.png',
+                'assets/cropped/Grace Shopper/frontpage.png'
+            ],
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap,Passport.js, EmailJs, Mocha/Chai/Sinon'
+        },
+        {
+            name: "Portfolio Website",
+            description: "What you're looking at right now!",
+            pictureUrl: [
+                'assets/frontpage.png',
+                'assets/frontpage.png'
+            ],
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap, Mocha/Chai/Supertest'
+        }
+
+    ];
+
+    var creatingProjects = projects.map(function (projectObj) {
+        return Project.create(projectObj);
+    });
+
+    return Promise.all(creatingProjects);
+
+};
+
 db.sync({ force: true })
     .then(function () {
         return seedUsers();
+    })
+    .then(function () {
+        return portfolio();
     })
     .then(function () {
         console.log(chalk.green('Seed successful!'));
