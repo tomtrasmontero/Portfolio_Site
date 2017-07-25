@@ -1,32 +1,41 @@
 section#home {
-	background-color: #ffffff;
-	padding: 2rem;
+    background-color: #ffffff;
+    //add filter to image so text can be seen clearly
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.3)
+    ),url(assets/coverhome3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
 	
+	h1.homeText , p {
+	  text-align: center;
+	  background: none;
+	  color: #ffffff;
+	}
+
 	div.cust-home {
 	  margin-bottom: 0px;
 	  padding-top: 0px;
 	  padding-bottom: 0px;
-	  background-color: #ffffff;
+	  background-color: rgba(0,0,0,0.0);
 
 	  span {
-	  	color: #d10c19;
+	  	font-style: italic;
 	  }
-
-	}
-
-	 h1.homeText {
-	  text-align: center;
-	  background: none;
-	}
-
-	div p {
-		text-align: center;
 	}
 
 	div img.img-responsive {
 		margin-bottom: 50px;
+		//replace img to a scalable div
+		opacity: 0;
 	}
 
+	div.test {
+		max-height: 720px;
+		max-width: 1024px;
+	}
 
 }
 
