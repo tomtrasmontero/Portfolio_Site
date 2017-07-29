@@ -118,7 +118,7 @@ section.portfolioDetail{
 			img {		  	  
 			  //grey scale
 			  -webkit-filter: grayscale(50%); /* Safari */
-    		  filter: grayscale(50%);
+    		  filter: grayscale(50%);    		  
 	
 			}
 
@@ -154,5 +154,34 @@ section.portfolioDetail{
 		}
 	}
 
-	
+	div.portfolioButtonGroup {
+		text-align: center;
+
+		a {
+			color: #ffffff;
+			
+			&.siteButton {
+				background-color: #71A2CD;
+			}
+
+			&.gitButton {
+	    		background-color: #000000;
+			}
+
+			&:hover {
+		    	-webkit-transform: scale(1.1);
+			    -moz-transform: scale(1.1);
+			    -o-transform: scale(1.1);
+
+			    -webkit-transition-duration: 0.5s;
+     			-moz-transition-duration: 0.5s;
+     			-o-transition-duration: 0.5s;
+			}
+		}
+	}
+
+	div.portfolioDetail {
+		text-align: center;
+	}
+
 }

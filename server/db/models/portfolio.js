@@ -7,12 +7,18 @@ module.exports = db.define('portfolio', {
 		allowNull: false
 	},
 	description: {
-		type: Sequelize.TEXT,
+		type: Sequelize.TEXT
 	},
 	pictureUrl: {
-		type: Sequelize.ARRAY(Sequelize.TEXT),
+		type: Sequelize.ARRAY(Sequelize.TEXT)
 	},
 	technology: {
-		type: Sequelize.TEXT,
+		type: Sequelize.TEXT
+	},
+	gitUrl: {
+		type: Sequelize.TEXT
+	},
+	siteUrl: {
+		type: Sequelize.TEXT
 	}
 });

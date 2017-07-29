@@ -54,7 +54,9 @@ let portfolio = function () {
                 'assets/cropped/whatson/frontpage.png',
                 'assets/cropped/whatson/frontpage.png'
             ],
-            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap, WebRTC, RTC Multi Connection, Dropbox'
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap, WebRTC, RTC Multi Connection, Dropbox',
+            gitUrl: 'https://github.com/tomtrasmontero/capstone-whats-on',
+            siteUrl: 'https://fs-whats-on.herokuapp.com'
         },
         {
             name: "Grace Shopper",
@@ -63,7 +65,9 @@ let portfolio = function () {
                 'assets/cropped/Grace Shopper/frontpage.png',
                 'assets/cropped/Grace Shopper/frontpage.png'
             ],
-            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap,Passport.js, EmailJs, Mocha/Chai/Sinon'
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap,Passport.js, EmailJs, Mocha/Chai/Sinon',
+            gitUrl: 'https://github.com/tomtrasmontero/Grace_Shopper',
+            siteUrl: 'https://grace-hopper-wkt.herokuapp.com'
         },
         {
             name: "Portfolio Website",
@@ -72,7 +76,9 @@ let portfolio = function () {
                 'assets/frontpage.png',
                 'assets/frontpage.png'
             ],
-            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap, Mocha/Chai/Supertest'
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Sequelize, Bootstrap, Mocha/Chai/Supertest',
+            gitUrl: 'https://github.com/tomtrasmontero/Portfolio_Site',
+            siteUrl: 'https://tomtrasmontero-portfolio.herokuapp.com'
         }
 
     ];
