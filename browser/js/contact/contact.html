@@ -3,18 +3,56 @@
 	<div class="col-xs-12">
 	  <div class="contactSummary">
 	  	&nbsp
+	  	<h2 class="contactHeader">Contact</h2>
 	  </div>
 	</div>
   </div>	
-	
+</div>
+
+<div class="container-fluid contactDetails">
   <div class="row">
 	<div class="col-xs-12 col-sm-6">
-	  	test
+	  <div class="contactInfo">
+	  	<h6>Address: </h6>
+	  	<p>Jersey City, New Jersey 07302</p>
+	  	<h6>EMAIL: </h6>
+	  	<p>tomtrasmontero@gmail.com</p>
+	  </div>
 	</div>
 
 	<div class="col-xs-12 col-sm-6">
-	  	test2
-	</div>
-  </div>
+	  <div class="row contactForm">
+	    <div class="col-xs-12">
 
-</div>
+		  	<ng-form name="contactForm" novalidate>
+		  	  <div class='form-group'>
+		  	  	
+				<div class='col-xs-12 formStyle'>
+				<label>Name:</label>
+				<input type='text' class='form-control' name='productName' ng-model='contact.name' onclick="select()" required>
+				</div>
+
+				<div class='col-xs-12 formStyle'>
+				<label>Phone:</label>
+				<input type='text' class='form-control' name='productName' ng-model='contact.phone' placeholder="1234567890" onclick="select()" required>
+				</div>	
+
+				<div class='col-xs-12 formStyle'>
+				<label>Email:</label>
+				<input type='email' class='form-control' name='productName' ng-model='contact.email' placeholder="email@example.com" onclick="select()" required >
+				</div>
+
+				<div class='col-xs-12 formStyle'>				
+				<label>Message:</label>
+				<textarea type='text' class='form-control' ng-model='contact.message' placeholder="Send me a message..." onclick="select()" required></textarea>
+				</div>						
+
+				<input type='submit' class='btn btn-success btn-lg contactSubmitButton' ng-click='addNewItem(newItem)' ng-disabled='contactForm.$invalid'>
+		  	  </div>
+		  	</ng-form>
+
+	  	</div>
+	  </div>
+	</div>
+  </div>	
+</div>	

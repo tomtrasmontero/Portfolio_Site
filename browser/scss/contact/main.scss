@@ -4,4 +4,42 @@ div.contactSummary {
 	background: url(assets/coverhome.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+
+
+	h2.contactHeader {
+		text-align: center;
+		color: #000000;
+	}
+
+}
+
+div.contactDetails {
+	min-height: 80vh;
+
+	div.contactInfo {
+		
+		h6 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 2rem;
+		}
+	}
+}
+
+div.contactForm {
+
+	div.formStyle {
+		padding: 1%;
+	}
+
+	textarea {
+		height: 10rem;
+	}
+
+	input.contactSubmitButton {
+		display: block;
+		margin: auto;
+	}
 }
