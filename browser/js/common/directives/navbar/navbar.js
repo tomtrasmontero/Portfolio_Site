@@ -23,6 +23,15 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state, 
                 }
             };
 
+            // active tabs
+            scope.select = function(item) {
+                    scope.selected = item;
+            };
+
+            scope.isActive = function(item) {
+                    return scope.selected === item;
+            };
+
             scope.user = null;
 
 

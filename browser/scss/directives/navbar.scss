@@ -78,10 +78,6 @@ navbar {
       color: #000;
     }
 
-    &.active {
-      color: #FFFFFF;
-    }
-
     &:focus {
       background: none;
     }
@@ -126,5 +122,12 @@ navbar {
     padding: 15px 15px 15px 0px;
   }
 
+  //add underline on active tab
+  li.active {
+    text-decoration: underline;
+
+  }
 
 }
+
+

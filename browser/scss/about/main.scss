@@ -1,14 +1,42 @@
-#about {
-  height: 100vh;	
+div.contactSummary {
+	width: auto;
+	height: 10rem;
+	background-color: #3ab3c2;
 
-  div h1 {
+	h2.contactHeader {
+		text-align: center;
+		color: #ffffff;
+	}	
+}
+
+#about {
+  min-height: 75vh;	
+
+  div > h1 ,h3 , p {
     text-align: center;
   }
 
-  div img {
-    display: block;
-    margin: auto;
+  p.story {
+  	font-size: 18px;
+  }  
 
+
+  div.imgAboutContainer {
+  	height: 100%;
+  	text-align: center;
+
+  	&:before{
+  		content: ' ';
+    	display: inline-block;
+    	vertical-align: middle;  /* vertical alignment of the inline element */
+    	height: 100%;
+  	}
+
+  	img {
+  		display: inline-block;
+  		vertical-align: middle;
+
+  	}
   }
 
 }

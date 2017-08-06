@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="navHead" >
           <ul class="nav navbar-nav navbar-right">
           <!-- use ng-attr to check if the screen width is on small devices to activate auto collapse and prevent toggle on larger screen to stop flickering bu -->
-            <li ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()" class="active" ><a ui-sref="{{ item.state }}" ng-attr-data-toggle="{{screenWidth > 769 ? '' : 'collapse'}}" ng-click="checkWidth()" data-target="#navHead">{{ item.label }}<span class="sr-only">(current)</span></a></li>
+            <li ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()" ng-class="{active: isActive(item)}" ><a ui-sref="{{ item.state }}" ng-attr-data-toggle="{{screenWidth > 769 ? '' : 'collapse'}}" ng-click="checkWidth() ; select(item)" data-target="#navHead">{{ item.label }}<span class="sr-only">(current)</span></a></li>
           </ul>
         </div>
     </div>
