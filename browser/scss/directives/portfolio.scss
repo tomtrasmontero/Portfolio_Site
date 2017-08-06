@@ -191,10 +191,22 @@ section.portfolioDetail{
 
 	div.portfolioDetail {
 		text-align: center;
-		margin: 6%;
+		margin: 4%;
 	}
 
 }
+
+div.demoButton {
+	text-align: center;
+	padding-top: 3%;
+}
+
+
+// modal content styling
+div.modal-content p {
+	text-align: center;
+}
+
 
 @media only screen and (max-device-width: 700px) {
     section.portfolioDetail i.backArrow {

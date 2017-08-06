@@ -32,7 +32,13 @@ app.config(function ($stateProvider) {
     });
 });
 
-app.controller('portfolioCtrl', function($scope, project){
+app.controller('portfolioCtrl', function($scope, $sce, project){
     $scope.project = project[0];
+
+    // must use $sce to have angular show iframe, url must be embedded due to youtube restriction
+    $scope.updateUrl = function(url){
+        $scope.trustedUrl = $sce.trustAsResourceUrl(url);
+    };
+
 });
 

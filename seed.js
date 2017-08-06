@@ -56,7 +56,8 @@ let portfolio = function () {
             ],
             technology: 'AngularJs, Node.js, Express, PostgreSQL, Bootstrap, WebRTC, RTC Multi Connection, Dropbox',
             gitUrl: 'https://github.com/tomtrasmontero/capstone-whats-on',
-            siteUrl: 'https://fs-whats-on.herokuapp.com'
+            siteUrl: 'https://fs-whats-on.herokuapp.com',
+            demoUrl: 'https://www.youtube.com/embed/Wxk71U0c_Jw'
         },
         {
             name: "Grace Shopper",

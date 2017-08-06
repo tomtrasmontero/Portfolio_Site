@@ -20,5 +20,8 @@ module.exports = db.define('portfolio', {
 	},
 	siteUrl: {
 		type: Sequelize.TEXT
+	},
+	demoUrl: {
+		type: Sequelize.TEXT
 	}
 });
