@@ -16,8 +16,14 @@ app.factory('PortfolioService', function ($http) {
             .then(function(project){
                 return project.data;
             });
-        }
+        },
 
+        sendMessage: function(contactForm){
+            return $http.post('/api/portfolio/message', contactForm)
+              .then(function(status){
+                return status;
+              });
+        }
 
     };
 });

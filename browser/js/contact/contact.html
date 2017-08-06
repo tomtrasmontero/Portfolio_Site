@@ -13,9 +13,9 @@
   <div class="row">
 	<div class="col-xs-12 col-sm-6">
 	  <div class="contactInfo">
-	  	<h6>Address: </h6>
-	  	<p>Downtown Jersey City, New Jersey 07302</p>
-	  	<h6>EMAIL: </h6>
+	  	<p>Address: </p>
+	  	<p>Downtown Jersey City, NJ 07302</p>
+	  	<p>EMAIL: </p>
 	  	<p>tomtrasmontero@gmail.com</p>
 	  </div>
 	</div>
@@ -29,25 +29,20 @@
 		  	  	
 				<div class='col-xs-12 formStyle'>
 				<label>Name:</label>
-				<input type='text' class='form-control' name='productName' ng-model='contact.name' onclick="select()" required>
+				<input type='text' class='form-control' name='contactName' ng-model='contact.name' placeholder="Joe Example" onclick="select()" required>
 				</div>
 
 				<div class='col-xs-12 formStyle'>
-				<label>Phone:</label>
-				<input type='text' class='form-control' name='productName' ng-model='contact.phone' placeholder="1234567890" onclick="select()" required>
-				</div>	
-
-				<div class='col-xs-12 formStyle'>
 				<label>Email:</label>
-				<input type='email' class='form-control' name='productName' ng-model='contact.email' placeholder="email@example.com" onclick="select()" required >
+				<input type='email' class='form-control' name='contactEmail' ng-model='contact.email' placeholder="email@example.com" onclick="select()" required >
 				</div>
 
 				<div class='col-xs-12 formStyle'>				
 				<label>Message:</label>
-				<textarea type='text' class='form-control' ng-model='contact.message' placeholder="Send me a message..." onclick="select()" required></textarea>
+				<textarea type='text' class='form-control' name='contactMessage' ng-model='contact.message' placeholder="Send me a message..." onclick="select()" required></textarea>
 				</div>						
 
-				<input type='submit' class='btn btn-success btn-lg contactSubmitButton' ng-click='addNewItem(newItem)' ng-disabled='contactForm.$invalid'>
+				<input type='submit' class='btn btn-success btn-lg contactSubmitButton' ng-click='sendMessage(contact)' ng-disabled='contactForm.$invalid'>
 		  	  </div>
 		  	</ng-form>
 
@@ -55,4 +50,28 @@
 	  </div>
 	</div>
   </div>	
-</div>	
+</div>
+
+<!-- Trigger the modal with a button -->
+<button ng-hide='true' type="button" id='contactStatusButton' data-toggle="modal" data-target="#contactModal"></button>
+
+<!-- Modal -->
+<div id="contactModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Status:</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{ contactModalStatus }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

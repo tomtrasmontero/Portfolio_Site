@@ -16,6 +16,10 @@ module.exports = {
     clientSecret: 'INSERT_GOOGLE_CLIENT_SECRET_HERE',
     callbackURL: 'INSERT_GOOGLE_CALLBACK_HERE'
   },
+  GMAIL: {
+      userName: 'tomlearnsprogramming',
+      password: 'tomlearns'
+  },
   LOGGING: true,
   NATIVE: true
 };

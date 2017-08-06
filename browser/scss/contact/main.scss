@@ -1,9 +1,7 @@
 div.contactSummary {
 	width: auto;
 	height: 10rem;
-	background: url(assets/coverhome.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	background-color: #3ab3c2;
 
 
 	h2.contactHeader {
@@ -15,13 +13,11 @@ div.contactSummary {
 
 div.contactDetails {
 	min-height: 80vh;
+	margin-top: 2%;
 
 	div.contactInfo {
+		padding-bottom: 2%;
 		
-		h6 {
-			font-size: 2rem;
-		}
-
 		p {
 			font-size: 2rem;
 		}
@@ -29,6 +25,11 @@ div.contactDetails {
 }
 
 div.contactForm {
+	border-style: groove;
+
+	.ng-invalid.ng-not-empty {
+		border-color: #d10c19;
+	}
 
 	div.formStyle {
 		padding: 1%;
@@ -36,6 +37,10 @@ div.contactForm {
 
 	textarea {
 		height: 10rem;
+	}
+
+	label {
+		font-size: large;
 	}
 
 	input.contactSubmitButton {

@@ -24,6 +24,10 @@ module.exports = {
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         callbackURL: process.env.GOOGLE_CALLBACK_URL
     },
+    GMAIL: {
+        userName: process.env.GMAIL_NAME,
+        password: process.env.GMAIL_PASS
+    },
     LOGGING: true,
     NATIVE: true
 };
