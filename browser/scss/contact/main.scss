@@ -22,29 +22,41 @@ div.contactDetails {
 			font-size: 2rem;
 		}
 	}
-}
+	
+	div.contactForm {
+		border-style: groove;
+		margin:	1%;
 
-div.contactForm {
-	border-style: groove;
+		.ng-invalid.ng-not-empty {
+			border-color: #d10c19;
+		}
 
-	.ng-invalid.ng-not-empty {
-		border-color: #d10c19;
+		div.formStyle {
+			padding: 1%;
+		}
+
+		textarea {
+			height: 10rem;
+		}
+
+		label {
+			font-size: large;
+		}
+
+		input.contactSubmitButton {
+			display: block;
+			margin: auto;
+		}
 	}
 
-	div.formStyle {
-		padding: 1%;
-	}
+	div.googleMap {
+		margin-top: 2rem;
+		width: auto;
+		height: 25rem;
 
-	textarea {
-		height: 10rem;
-	}
-
-	label {
-		font-size: large;
-	}
-
-	input.contactSubmitButton {
-		display: block;
-		margin: auto;
+		iframe {
+			display: block;
+			width: 100%;
+		}
 	}
 }
