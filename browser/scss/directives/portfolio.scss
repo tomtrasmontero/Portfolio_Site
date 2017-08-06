@@ -90,6 +90,11 @@ section.portfolioDetail{
 	padding: 2rem;
 	min-height: 800px;
 
+	a.backButton {
+		// increase the clickable area
+		display: block;
+	}
+
 	i.backArrow {
 		font-size: 50px;
 		color: #3ab3c2;
