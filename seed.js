@@ -79,7 +79,7 @@ let portfolio = function () {
             ],
             technology: 'AngularJs, Node.js, Express, PostgreSQL, Bootstrap, LESS, Mocha/Chai/Supertest',
             gitUrl: 'https://github.com/tomtrasmontero/Portfolio_Site',
-            siteUrl: 'https://tomtrasmontero-portfolio.herokuapp.com'
+            siteUrl: 'https://www.tomtrasmontero.com'
         }
 
     ];
