@@ -57,7 +57,7 @@ navbar {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       -webkit-transition: all 0.2s ease-in-out 0s;
-      transition: all 0.2s ease-in-out 0s;      
+      transition: all 0.2s ease-in-out 0s;
     }
 
     &:hover:before {
@@ -75,7 +75,7 @@ navbar {
       -o-transform: scale(0.8);
 
      // underline animation
-      color: #000;
+      color: #3bb3c2;;
     }
 
     &:focus {
@@ -122,12 +122,9 @@ navbar {
     padding: 15px 15px 15px 0px;
   }
 
-  //add underline on active tab
-  li.active {
-    text-decoration: underline;
-
+  //add color on active tab
+  li.active a {
+    color: #3bb3c2;
   }
 
 }
-
-
