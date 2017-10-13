@@ -6,11 +6,11 @@ div.contactSummary {
 	h2.contactHeader {
 		text-align: center;
 		color: #ffffff;
-	}	
+	}
 }
 
 #about {
-  min-height: 75vh;	
+  min-height: 75vh;
 
   div > h1 ,h3 , p {
     text-align: center;
@@ -18,7 +18,8 @@ div.contactSummary {
 
   p.story {
   	font-size: 18px;
-  }  
+    text-align: left;
+  }
 
 
   div.imgAboutContainer {
@@ -35,7 +36,7 @@ div.contactSummary {
   	img {
   		display: inline-block;
   		vertical-align: middle;
-
+      margin-top: 1rem;
   	}
   }
 
