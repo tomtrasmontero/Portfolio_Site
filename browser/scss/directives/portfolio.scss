@@ -1,22 +1,3 @@
-section.portfolioSummary  {
-	padding: 0% 0px 3% 0px;
-
-	h1 {
-		text-align: center;
-    text-decoration: underline;
-	}
-
-	a.FSG {
-		color: #d10c19;
-		text-decoration: underline;
-	}
-
-	div.summaryDescription {
-		padding: 5% 10% 0% 10%;
-	}
-}
-
-
 section#portfolio {
 	background-color: #ffffff;
 	padding: 2rem;
@@ -88,7 +69,7 @@ section#portfolio {
 // Portfolio Detail css
 section.portfolioDetail{
 	padding: 2rem;
-	min-height: 800px;
+	min-height: 500px;
 
 	a.backButton {
 		// increase the clickable area
