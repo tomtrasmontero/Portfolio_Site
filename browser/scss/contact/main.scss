@@ -17,16 +17,17 @@ div.contactDetails {
 
 	div.contactInfo {
 		padding-bottom: 2%;
-		
-		p {
+
+		span {
+      padding-left: 1rem;
 			font-size: 2rem;
 		}
 
 		label {
-			font-size: large;
+			font-size: xx-large;
 		}
 	}
-	
+
 	div.contactForm {
 		border-style: groove;
 		margin:	1%;

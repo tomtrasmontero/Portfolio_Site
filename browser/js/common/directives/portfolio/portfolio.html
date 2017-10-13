@@ -1,9 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+	<div class="col-xs-12">
+	  <div class="contactSummary">
+	  	&nbsp
+	  	<h2 class="contactHeader">Portfolio</h2>
+	  </div>
+	</div>
+  </div>
+</div>
+
 <section class="portfolioSummary">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 summaryDescription">
-				<h1>What I've been doing</h1>
-				<p>List of projects I've been involved in.  Still making updates as I discover new technologies.</p>
+				<h1>What I've been doing:</h1>
 			</div>
 		</div>
 	</div>
@@ -17,7 +27,7 @@
 				<div class="row" ng-repeat="project in projects">
 				  <div class="col-xs-1 col-sm-2 col-md-3"></div>
 					<div class="col-xs-10 col-sm-8 col-md-6 projectShowcase">
-					    <h3>Project:<span> {{project.name}}</span></h3>
+					    <h3>Title:<span> {{project.name}}</span></h3>
 					    <div class="row">
 						  <div class="imgContainer col-xs-12">
 						    <a ui-sref="portfolioDetail({id: {{project.id}} })"><img ng-src="{{project.pictureUrl[0]}}" class="img-responsive portfolioImg">

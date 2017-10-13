@@ -1,9 +1,9 @@
 section.portfolioSummary  {
-	padding: 5% 0px 3% 0px;
+	padding: 0% 0px 3% 0px;
 
-
-	h1, p {
+	h1 {
 		text-align: center;
+    text-decoration: underline;
 	}
 
 	a.FSG {
@@ -41,15 +41,15 @@ section#portfolio {
 	      //boxshadow
 		  box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
 		  -webkit-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
-		  -moz-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);	
+		  -moz-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
 
 		&:hover {
 
-			img {		  	  
+			img {
 			  //grey scale
 			  -webkit-filter: grayscale(50%); /* Safari */
     		  filter: grayscale(50%);
-	
+
 			}
 
 			div.overlay {
@@ -57,7 +57,7 @@ section#portfolio {
 		  		opacity: 0.5;
 		  	}
 		}
-	
+
 		div.overlay {
 			position: absolute;
 			top: 0;
@@ -125,15 +125,15 @@ section.portfolioDetail{
 	      //boxshadow
 		  box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
 		  -webkit-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
-		  -moz-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);	
+		  -moz-box-shadow: 9px 7px 32px 0px rgba(0,0,0,0.75);
 
 		&:hover {
 
-			img {		  	  
+			img {
 			  //grey scale
 			  -webkit-filter: grayscale(50%); /* Safari */
-    		  filter: grayscale(50%);    		  
-	
+    		  filter: grayscale(50%);
+
 			}
 
 			div.overlay {
@@ -141,7 +141,7 @@ section.portfolioDetail{
 		  		opacity: 0.5;
 		  	}
 		}
-	
+
 		div.overlay {
 			position: absolute;
 			top: 0;
@@ -173,7 +173,7 @@ section.portfolioDetail{
 
 		a {
 			color: #ffffff;
-			
+
 			&.siteButton {
 				background-color: #71A2CD;
 			}
@@ -216,7 +216,5 @@ div.modal-content p {
 @media only screen and (max-device-width: 700px) {
     section.portfolioDetail i.backArrow {
     	font-size: 30px;
-    }  
+    }
 }
-
-

@@ -20,7 +20,7 @@ name in the environment files.
 var chalk = require('chalk');
 var db = require('./server/db');
 var User = db.model('user');
-const Project = db.model('portfolio');
+var Project = db.model('portfolio');
 var Promise = require('sequelize').Promise;
 
 var seedUsers = function () {
@@ -47,6 +47,17 @@ var seedUsers = function () {
 let portfolio = function () {
 
     var projects = [
+        {
+            name: "Personal Blog",
+            description: "A simple Blog using React/Redux",
+            pictureUrl: [
+                'assets/cropped/TomLearnsProgrammingCover.png',
+                'assets/cropped/TomLearnsProgrammingCover.png'
+            ],
+            technology: 'React, Redux, Node.js, Express, PostgreSQL, SASS, Mocha/Chai/Supertest',
+            gitUrl: 'https://github.com/tomtrasmontero/React_Blog',
+            siteUrl: 'https://tomlearnsprogrammingblog.herokuapp.com/'
+        },
         {
             name: "what's on",
             description: 'Twitch-like website that allows a user to broadcast a live stream from the browser to the world.  Also allows for screen broadcast as well!',
@@ -77,7 +88,7 @@ let portfolio = function () {
                 'assets/frontpage.png',
                 'assets/frontpage.png'
             ],
-            technology: 'AngularJs, Node.js, Express, PostgreSQL, Bootstrap, LESS, Mocha/Chai/Supertest',
+            technology: 'AngularJs, Node.js, Express, PostgreSQL, Bootstrap, SASS, Mocha/Chai/Supertest',
             gitUrl: 'https://github.com/tomtrasmontero/Portfolio_Site',
             siteUrl: 'http://www.tomtrasmontero.com'
         }
@@ -97,6 +108,7 @@ db.sync({ force: true })
         return seedUsers();
     })
     .then(function () {
+      console.log('portfolio is synced')
         return portfolio();
     })
     .then(function () {
