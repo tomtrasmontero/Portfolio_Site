@@ -2,15 +2,21 @@
   box-sizing: border-box;
 }
 
-html { 
+html {
   height: 100%;
-
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: 'Fjalla One', sans-serif;
   height: 100vh;
   padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.2;
 }
 
 p {
@@ -64,7 +70,7 @@ footer.navbar {
  .social {
      -webkit-transform: scale(0.8);
      /* Browser Variations: */
-     
+
      -moz-transform: scale(0.8);
      -o-transform: scale(0.8);
      -webkit-transition-duration: 0.5s;
@@ -82,20 +88,20 @@ footer.navbar {
 
  #google:hover {
 	 color: #008744;
- } 
+ }
 
 }
 
 
 @media only screen and (min-device-width: 700px) {
-  
+
   html {
   	  position: relative;
       max-width: 1024px;
       max-height: 768px;
       margin: auto;
 	}
-	
+
 }
 
 
