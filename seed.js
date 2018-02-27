@@ -48,6 +48,17 @@ let portfolio = function () {
 
     var projects = [
         {
+            name: "Hodl & Stake",
+            description: "Crypto Currency Portfolio Manager",
+            pictureUrl: [
+                'assets/cropped/Hodlstake.png',
+                'assets/cropped/Hodlstake.png'
+            ],
+            technology: 'React, Redux, Node.js, Express, HighCharts, PostgreSQL, Socket.io, Firebase Auth,',
+            gitUrl: 'https://github.com/tomtrasmontero/Cryptofolio',
+            siteUrl: 'https://hodlnstake.herokuapp.com/'
+        },
+        {
             name: "Personal Blog",
             description: "A simple Blog using React/Redux",
             pictureUrl: [
